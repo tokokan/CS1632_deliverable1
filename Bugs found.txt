@@ -17,5 +17,15 @@
  EXPECTED BEHAVIOR: you should see text "You see a Rough room"
  OBSERVED BEHAVIOR: the text "You see a Small room" is displayed 
 
+DESCRIPTION: Player is able to find the same item twice
+SUMMARY: As shown in Test Case 8, the player is able to find cream after already having cream in the inventory
+REPRODUCTION STEPS: Run the program, enter "L", then enter "L" again
+EXPECTED BEHAVIOR: "You don't see anything out of the ordinary" should be printed
+OBSERVED BEHAVIOR: "There might be something here... You found some creamy cream!" is printed
 
+DESCRIPTION: Room description and furnishing description is not displayed after going through a magical land
+SUMMARY: As shown in Test Cases 16 and 20, the room description and furnishing despription isn't printed after returning to the beginning room because of going through a magical land
+REPRODUCTION STEPS: Run the program, enter "N" until the player is in the room described as the Rough room. Enter "N" again.
+EXPECTED BEHAVIOR: "You see a Small room. It has a Quaint sofa. A Magenta door leads North." should be printed into terminal.
+OBSERVED BEHAVIOR: No room description or furnishing description is printed into terminal.
 
