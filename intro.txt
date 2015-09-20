@@ -1,0 +1,10 @@
+CS1632 - FALL 2015 - DELIVERABLE 1: Test Plan and Traceability Matrix
+
+Tri Nguyen
+Clark Nicolas
+
+
+One of the diffuculty in doing this project is to determine the difference between input values and precondition. Although it is stated in the textbook (yeah I read it) that we should consider input values as methods, it's still a bit confusing. For example, in the case of testing FUN-MOVE, I use command "L" to check if player is in the same or different room as before, thus producing input values (like: "N" and "L"). The "N" command should be the precondition, but since the requirement is testing the movement, I'm still a bit unsure about it. 
+
+For choosing test case, I have 3 cases I typically choose: Happy path, a normal expected case; long/positive extreme, a long test case which require long input or many execution steps; short/negative extreme, a short (or sometimes nothing) case which require few execution steps
+
