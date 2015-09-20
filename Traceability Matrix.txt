@@ -1,24 +1,27 @@
-FUN-ITERATION - 
-
-FUN-UNKNOWN-COMMAND - 1, 3
-
-FUN-INPUT-CAPS - 5, 7
-
-FUN-MOVE - 
-
-FUN-WIN - 
-
-FUN-LOSE - 
+Requirement   			- Test case
 
 
+FUN-ITERATION 			- 21, 23
+
+FUN-UNKNOWN-COMMAND 	- 1, 3
+
+FUN-INPUT-CAPS 			- 5, 7
+
+FUN-MOVE 				- 9, 11
+
+FUN-WIN 				- 13, 15
+
+FUN-LOSE 				- 17, 19
 
 
-FUN-INVENTORY - 
 
-FUN-LOOK - 
 
-FUN-HELP - 
+FUN-INVENTORY 			- 
 
-FUN-UNIQ-ROOM - 
+FUN-LOOK 				- 
+
+FUN-HELP 				- 
+
+FUN-UNIQ-ROOM 			- 
 
 FUN-UNIQ-ROOM-FURNISHING - 

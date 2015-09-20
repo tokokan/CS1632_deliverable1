@@ -33,10 +33,69 @@ OUTPUT VALUES: you should see the text
 	YOU HAVE NO SUGAR!"
 POSTCONDITIONS: the program should keep running normally
 
-IDENTIFIER:
-TEST CASE: 
-PRECONDITIONS:
-INPUT VALUES:
-EXECUTION STEPS:
-OUTPUT VALUES:
-POSTCONDITIONS:
+IDENTIFIER: 9
+TEST CASE: ensure player can only go south if there is a door south
+PRECONDITIONS: the program is running, player is in the Small Room
+INPUT VALUES: "S", "L"
+EXECUTION STEPS: start program, type "S", type "L"
+OUTPUT VALUES: you should see the text  "You see a Small room."
+POSTCONDITIONS: the program should keep running normally
+
+IDENTIFIER: 11
+TEST CASE: ensure player can only go north if there is a door north
+PRECONDITIONS: the program is running, player is in the Rough Room
+INPUT VALUES: "N", "L"
+EXECUTION STEPS: start program, type "N", type "N", type "N", type "N", type "N", type "L"
+OUTPUT VALUES: you should see the text "You see a Rough room."
+POSTCONDITIONS: the program should keep running normally
+
+IDENTIFIER: 13 
+TEST CASE: ensure player win the game with coffee, sugar, and creamed have been collected and then drunk (fast play)
+PRECONDITIONS: the program is running, coffee, sugar, and cream is in the inventory
+INPUT VALUES: "D"
+EXECUTION STEPS: start program, type "L", type "N", type "N", type "L", type "N", type "N", type "N", type "L", type "D"
+OUTPUT VALUES: you should see the text "You win!"
+POSTCONDITIONS: you win the game
+
+IDENTIFIER: 15 
+TEST CASE: ensure player win the game with coffee, sugar, and creamed have been collected and then drunk (slow play)
+PRECONDITIONS: the program is running, coffee, sugar, and cream is in the inventory
+INPUT VALUES: "D"
+EXECUTION STEPS: start program, type "L", type "N", type "L", type "N", type "L", type "N", type "L", type "N", type "L", type "N", type "L", type "D"
+OUTPUT VALUES: you should see the text "you win!"
+POSTCONDITIONS: you win the game
+
+IDENTIFIER: 17
+TEST CASE: ensure player lose if drinking without collecting all items (fast play)
+PRECONDITIONS: the program is running, player has nothing in inventory
+INPUT VALUES: "D"
+EXECUTION STEPS: start program, type "D"
+OUTPUT VALUES: you should see the text "You lose!"
+POSTCONDITIONS: you lose the game
+
+IDENTIFIER: 19
+TEST CASE: ensure player lose if drinking with only cream in inventory (slow play) 
+PRECONDITIONS: the program is running, player only has cream in inventory
+INPUT VALUES: "D"
+EXECUTION STEPS: start program, type "L", type "D"
+OUTPUT VALUES: you should see the text "You lose!"
+POSTCONDITIONS: you lose the game
+
+IDENTIFIER: 21 
+TEST CASE: ensure Inventory command is working
+PRECONDITIONS: program is running
+INPUT VALUES: "I"
+EXECUTION STEPS: start program, type "I"
+OUTPUT VALUES: you should see the text
+	"YOU HAVE NO COFFEE!
+	YOU HAVE NO CREAM!
+	YOU HAVE NO SUGAR!"
+POSTCONDITIONS: the program shoul run normally
+
+IDENTIFIER: 23
+TEST CASE: ensure Help command is working
+PRECONDITIONS: program is running
+INPUT VALUES: "H"
+EXECUTION STEPS: start program, type "H"
+OUTPUT VALUES: you should see help texts
+POSTCONDITIONS: the program should run normally
