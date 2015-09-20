@@ -1,0 +1,42 @@
+IDENTIFIER: 1
+TEST CASE: Ensure a very large input string is handled
+PRECONDITIONS: the program is running
+INPUT VALUES: "-10278490-1284390j21c89-0c-0982n-8gjh2-n9804tmj9-820ụnv-8293nv-829vumn-2839uvnm2894-ụyv08934uynvhy8940ụnbv3924ụv-4830ụm-43280ì-340tm-c34jgn9p8 3uhnjg098p23hjt098v32unm5v8043u-8905umnv98-24uynv089723yh5c09783ỵn0842yjh508923uvm r09834un8927yv56098432ỵvnb0985yvnb0295uvmn03245yvnb83ỵvnh0982uyv093845ynv098ỵmnv0983yh5v069874ỵv0893275nvh03894657bn0934n5vy 0493nbv6 2758v6 h043875vyh04nv043978mù vũy98yuvnm430987vynb4302985vnym43209v7yn432089v yb032498yhn4320985 hvn4390 ybn043982 5hbyn943285bn09248ủy8ub540329p5uy nh430298yuh 029834h n"
+EXECUTION STEPS: start program, type in input string above
+OUTPUT VALUES: you should see the text "What?"
+POSTCONDITIONS: the program should keep running normally
+
+IDENTIFIER: 3
+TEST CASE: ensure an empty input string is handled
+PRECONDITIONS: the program is running
+INPUT VALUES: None
+EXECUTION STEPS: start program, hit enter
+OUTPUT VALUES: you should see the text "what?"
+POSTCONDITIONS: the program shoul keep running normally
+
+IDENTIFIER: 5
+TEST CASE: ensure lower case 'n' is accepted
+PRECONDITIONS: the program is running 
+INPUT VALUES: "n"
+EXECUTION STEPS: start program, type input above
+OUTPUT VALUES: you should see the text "You see a funny room"
+POSTCONDITIONS: the program should keep running normally
+
+IDENTIFIER: 7
+TEST CASE: ensure lower case 'i' is accepted
+PRECONDITIONS: the program is running
+INPUT VALUES: "i"
+EXECUTION STEPS: start the program, type input above
+OUTPUT VALUES: you should see the text 
+	"YOU HAVE NO COFFEE!
+	YOU HAVE NO CREAM!
+	YOU HAVE NO SUGAR!"
+POSTCONDITIONS: the program should keep running normally
+
+IDENTIFIER:
+TEST CASE: 
+PRECONDITIONS:
+INPUT VALUES:
+EXECUTION STEPS:
+OUTPUT VALUES:
+POSTCONDITIONS:
