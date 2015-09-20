@@ -1,0 +1,21 @@
+ DESCRIPTION: Help command is recognized as unknown command
+ SUMMARY: typing either "H" or "h" does not show help texts
+ REPRODUCTION STEPS: Start Program, type "H"
+ EXPECTED BEHAVIOR: the text "Whar?" is not displayed
+ OBSERVED BEHAVIOR: the text "What?" is displayed
+
+
+ DESCRIPTION: lower case "n" command is recognized as unknown command
+ SUMMARY: typing "n" does not move player North
+ REPRODUCTION STEPS: start program, type "n"
+ EXPECTED BEHAVIOR: you should see text "You see a Funny room"
+ OBSERVED BEHAVIOR: the text "What?" is displayed
+
+ DESCRIPTION: Moving North in Rough room lead to Small room
+ SUMMARY: There is no room leading North in Rough room, but typing "N" would bring player to Small room
+ REPRODUCTION STEPS: start program, type "N", type "N", type "N", type "N", type "N", type "N", type "L"
+ EXPECTED BEHAVIOR: you should see text "You see a Rough room"
+ OBSERVED BEHAVIOR: the text "You see a Small room" is displayed 
+
+
+
