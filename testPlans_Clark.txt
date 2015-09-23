@@ -2,79 +2,79 @@
 IDENTIFIER: 2
 TEST CASE: Ensure there is nothing in player's inventory when nothing has been collected
 PRECONDITIONS: Inventory is empty
-INPUT VALUES: 
+INPUT VALUES: N/A
 EXECUTION STEPS: Type "I" then the return key into an empty line
-OUTPUT VALUES:
-POSTCONDITIONS: "YOU HAVE NO COFFEE! YOU HAVE NO CREAM! YOU HAVE NO SUGAR!" is printed into terminal
+OUTPUT VALUES: "YOU HAVE NO COFFEE! YOU HAVE NO CREAM! YOU HAVE NO SUGAR!" is printed into terminal
+POSTCONDITIONS: Inventory is empty
 
 IDENTIFIER: 4
 TEST CASE: Ensure that the player's inventory properly shows the presence of coffee, cream, and sugar when all three have been collected
 PRECONDITIONS: Inventory contains coffee, cream, and sugar
-INPUT VALUES: 
+INPUT VALUES: N/A
 EXECUTION STEPS: Type "I" then the return key into an empty line
-OUTPUT VALUES:
-POSTCONDITIONS: "You have a cup of delicious coffee. You have some fresh cream. You have some tasty sugar" is printed into terminal
+OUTPUT VALUES: "You have a cup of delicious coffee. You have some fresh cream. You have some tasty sugar" is printed into terminal
+POSTCONDITIONS: Inventory contains coffee, cream, and sugar
 
 IDENTIFIER: 6
 TEST CASE: Ensure that the player can look for items
 PRECONDITIONS: Player is in the room described as a Small room, Player has not already found object in the room
-INPUT VALUES:
+INPUT VALUES: N/A
 EXECUTION STEPS: Type "L" then the return key into an empty line
-OUTPUT VALUES:
-POSTCONDITIONS: "There might be something here... You found some creamy cream!" is printed into terminal
+OUTPUT VALUES: "There might be something here... You found some creamy cream!" is printed into terminal
+POSTCONDITIONS: Inventory now contains cream
 
 IDENTIFIER: 8
 TEST CASE: Ensure that the player can't find the same item twice
 PRECONDITIONS: Player is in the room described as a Small room, Player has already found object in the room
-INPUT VALUES:
+INPUT VALUES: N/A
 EXECUTION STEPS: Type "L" then the return key into an empty line
-OUTPUT VALUES:
-POSTCONDITIONS: "There might be something here... You found some creamy cream!" is printed into terminal
+OUTPUT VALUES:"There might be something here... You found some creamy cream!" is printed into terminal
+POSTCONDITIONS: Inventory still contains cream
 
 IDENTIFIER: 10
 TEST CASE: Ensure that the player is able to find nothing
 PRECONDITIONS: Player is in the room described as a Funny room
-INPUT VALUES:
+INPUT VALUES: N/A
 EXECUTION STEPS: Type "L" then the return key into an empty line
-OUTPUT VALUES:
-POSTCONDITIONS: "You don't see anything out of the ordinary." is printed into terminal
+OUTPUT VALUES: "You don't see anything out of the ordinary." is printed into terminal
+POSTCONDITIONS: Player is still in the funny room and inventory is empty
 
 IDENTIFIER: 12
 TEST CASE: Ensure that the Help command is functional
 PRECONDITIONS: The program is running
-INPUT VALUES:
+INPUT VALUES: N/A
 EXECUTION STEPS: Type "H" then the return key into an empty line
-OUTPUT VALUES:
-POSTCONDITIONS: "What" is printed into terminal
+OUTPUT VALUES: "What" is printed into terminal
+POSTCONDITIONS: Program is still running, nothing has changed
 
 IDENTIFIER: 14
 TEST CASE: Ensure that the each room in the house has a unique adjective describing it
 PRECONDITIONS: Player is in the room described as a Small room
-INPUT VALUES:
+INPUT VALUES: N/A
 EXECUTION STEPS: Run the program, type "N" then the return key into an empty line (5 times)
-OUTPUT VALUES:
-POSTCONDITIONS: The rooms are described as: "Small", "Funny", "Refinanced", "Dumb", "Bloodthirsty", and "Rough"
+OUTPUT VALUES: The rooms are described as: "Small", "Funny", "Refinanced", "Dumb", "Bloodthirsty", and "Rough", respectively
+POSTCONDITIONS: Player is in the room described as a Rough room
 
 IDENTIFIER: 16
 TEST CASE: Ensure that a room description is printed after going through a "magical land"
 PRECONDITIONS: Player is in the room described as a Rough room
-INPUT VALUES:
+INPUT VALUES: N/A
 EXECUTION STEPS: Type "N" then the return key into an empty line
-OUTPUT VALUES: 
-POSTCONDITIONS: There is no room description, only a notification that the player is returned to the beginning
+OUTPUT VALUES: There is no room description, only a notification that the player is returned to the beginning
+POSTCONDITIONS: Player is now in "the beginning"
 
 IDENTIFIER: 18
 TEST CASE: Ensure that each room has only one unique furnishing visible to the user upon entering the room
 PRECONDITIONS: The player is the room described as the Small room
-INPUT VALUES:
+INPUT VALUES: N/A
 EXECUTION STEPS: Type "N" then the return key into an empty line (5 times)
-OUTPUT VALUES:
-POSTCONDITIONS: The furnishing in each room is as follows: "sofa", "record player", "pizza", "energy drink", "bag of money", and "air hockey table"
+OUTPUT VALUES: The furnishing in each room is as follows: "sofa", "record player", "pizza", "energy drink", "bag of money", and "air hockey table"
+POSTCONDITIONS: The player is in the room described as the Rough room
 
 IDENTIFIER: 20
 TEST CASE: Ensure that the room's unique furnishing is visible to the user upon entering the room, after going through a "magical land"
 PRECONDITIONS: The player is in the room described as the Rough room
-INPUT VALUES:
+INPUT VALUES: N/A
 EXECUTION STEPS: Type "N" then the return key into an empty line
-OUTPUT VALUES:
-POSTCONDITIONS: There is no furnishing description printed into terminal upon being returned to the beginning
+OUTPUT VALUES: There is no furnishing description printed into terminal upon being returned to the beginning
+POSTCONDITIONS: Player is now in "the beginning"
